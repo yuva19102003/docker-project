@@ -2,7 +2,7 @@
 
 This guide provides instructions for creating a Flask Docker container. Docker allows you to package your Flask application with all its dependencies into a single, portable unit, ensuring consistent and reproducible deployment across different environments.
 
-!Untitled design.png
+  <img src="Untitled design.png" alt="mindmap"/>
 
 ## Prerequisites
 
