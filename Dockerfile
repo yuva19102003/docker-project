@@ -1,5 +1,5 @@
 # Stage 1: Build stage
-FROM python:3.8-slim as builder
+FROM python:3.9-buster as builder
 
 WORKDIR /app
 
@@ -19,7 +19,7 @@ FROM gcr.io/distroless/python3:latest
 WORKDIR /app
 
 # Copy only the necessary files from the builder stage
-COPY --from=builder /usr/local/lib/python3.8/site-packages /usr/local/lib/python3.8/site-packages
+COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
 COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /app /app
 
